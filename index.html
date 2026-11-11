@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0807" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Giovanna & Carlos Henrique · Vídeos</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' fill='%230a0807'/><circle cx='16' cy='16' r='6' fill='%23c99564'/></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Sora:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+    <p class="eyebrow">02 · 11 · 2026</p>
+    <h1>Giovanna <em>&amp;</em> Carlos Henrique</h1>
+    <p class="lede">Todos os vídeos do dia, do primeiro ao último. Toque para assistir e baixe o arquivo original de cada cena.</p>
+    <p class="stats" id="stats"></p>
+  </header>
+
+  <nav class="chips" id="chips" aria-label="Momentos"></nav>
+
+  <main id="gallery"></main>
+
+  <footer class="foot">
+    <p>Os originais estão em 4K, do jeito que foram gravados. Para editar ou guardar, baixe pelo botão de cada vídeo.</p>
+  </footer>
+
+  <dialog id="player" aria-label="Vídeo">
+    <div class="playerBox">
+      <video id="video" controls playsinline preload="metadata"></video>
+      <div class="playerBar">
+        <div>
+          <p class="playerTitle" id="pTitle"></p>
+          <p class="playerMeta" id="pMeta"></p>
+        </div>
+        <div class="playerActions">
+          <button type="button" class="ghost" id="prev" aria-label="Vídeo anterior">‹</button>
+          <button type="button" class="ghost" id="next" aria-label="Próximo vídeo">›</button>
+          <a class="btn" id="dl" href="#" download>Baixar original</a>
+          <button type="button" class="ghost close" id="close" aria-label="Fechar">✕</button>
+        </div>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="app.js"></script>
+</body>
+</html>
